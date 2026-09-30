@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santalum Maison</title>
+  <meta name="description" content="Santalum Maison. India's first sandalwood house, where the rarest botanical material on earth becomes jewellery, ritual and record." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('sm5-theme'); } catch (e) {}
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ============ INTRO: image grows from a small frame to the full hero ============ -->
+  <div class="intro" data-intro aria-hidden="true">
+    <span class="intro__count" data-count>00</span>
+    <span class="intro__word">santalum</span>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero card-sec" data-hero>
+      <div class="hero__media" data-hero-media>
+        <img src="https://images.unsplash.com/photo-1767817200767-8e6021bd8606?w=2400&q=80&auto=format&fit=crop" alt="A wood-carving workshop filled with carved figures, an artisan at work" fetchpriority="high" />
+      </div>
+      <div class="hero__shade"></div>
+
+      <header class="nav">
+        <a href="#top" class="brand">santalum</a>
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#top">Home</a>
+          <a href="#vault">Shop</a>
+          <a href="#about">About</a>
+          <a href="#voices">Journal</a>
+        </nav>
+        <div class="nav__tools">
+          <button class="ring" data-bag-open aria-label="Open bag"><i class="ph-light ph-bag-simple"></i><b data-bag-count>0</b></button>
+          <a class="ring" href="#" aria-label="Account"><i class="ph-light ph-user"></i></a>
+          <span class="nav__rule" aria-hidden="true"></span>
+          <button class="ring ring--solid" data-theme-toggle aria-label="Switch to dark theme"><i class="ph-light ph-moon" data-theme-icon></i></button>
+          <button class="ring ring--solid nav__menu" data-menu-open aria-label="Open menu" aria-expanded="false"><i class="ph-light ph-list"></i></button>
+        </div>
+      </header>
+
+      <p class="giant" aria-hidden="true" data-giant>SANTALUM</p>
+
+      <div class="hero__copy">
+        <h1 class="split">
+          <span class="ln"><span>Four thousand years,</span></span>
+          <span class="ln"><span class="cut">found its way to you.</span></span>
+        </h1>
+        <p class="hero__sub">India's first sandalwood house, where the rarest botanical material on earth becomes jewellery, ritual and record.</p>
+        <div class="duo">
+          <a href="#vault" class="pill pill--light">Explore the Maison</a>
+          <a href="#vault" class="dot" aria-label="Explore the Maison"><i class="ph-light ph-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. ABOUT: words light up as you scroll ============ -->
+    <section class="about card-sec card-sec--night" id="about" data-about>
+      <p class="kicker">About the Maison</p>
+      <p class="scrub" data-scrub>
+        At Santalum we work with one material: <em class="gold">red sandalwood, read by hand</em> and shaped into pieces that keep their record, <span class="cut">from a four thousand year tradition to what we make today.</span>
+      </p>
+      <div class="about__stage">
+        <img class="about__side about__side--l" data-drift="-40" src="https://images.unsplash.com/photo-1702001145743-094b0b7ead51?w=600&q=75&auto=format&fit=crop" alt="Cross-section of a sandalwood log" loading="lazy" />
+        <figure class="about__main" data-grow>
+          <img src="https://images.unsplash.com/photo-1721508490084-1b1de5b230d4?w=1200&q=80&auto=format&fit=crop" alt="An artisan shaping a block of wood with a mallet and chisel" loading="lazy" />
+        </figure>
+        <img class="about__side about__side--r" data-drift="40" src="https://images.unsplash.com/photo-1784570343031-649cce9a185c?w=600&q=75&auto=format&fit=crop" alt="Polished red-brown sandalwood beads" loading="lazy" />
+      </div>
+      <p class="about__body reveal">Since 1980 the Maison has worked with red sandalwood and nothing else. Every piece is carved by hand, numbered and registered, and leaves with its provenance documentation.</p>
+      <div class="duo duo--center reveal">
+        <a href="#voices" class="pill pill--ghost">Learn more</a>
+        <a href="#voices" class="dot" aria-label="Learn more about the Maison"><i class="ph-light ph-arrow-up-right"></i></a>
+      </div>
+    </section>
+
+    <!-- ============ 3. FEATURE: piece over a marquee ============ -->
+    <section class="feature card-sec card-sec--wood" data-feature>
+      <div class="feature__top">
+        <h2 class="split"><span class="ln"><span>Every piece begins</span></span><span class="ln"><span><i class="dash" aria-hidden="true"></i><span class="cut">as a reading.</span></span></span></h2>
+        <div class="feature__aside">
+          <p>The artisan studies the grain before the first cut. The wood decides what it will become.</p>
+          <div class="duo">
+            <a href="#voices" class="pill pill--ghost">The Craft</a>
+            <a href="#voices" class="dot dot--light" aria-label="Read about the craft"><i class="ph-light ph-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="feature__stage">
+        <div class="marq" aria-hidden="true">
+          <div class="marq__track"><span>Most requested in 2026</span><span>Most requested in 2026</span><span>Most requested in 2026</span><span>Most requested in 2026</span></div>
+        </div>
+        <figure class="feature__piece" data-grow>
+          <img src="https://images.unsplash.com/photo-1732142007807-c49145899f45?w=1000&q=80&auto=format&fit=crop" alt="Two carved wooden forms, smooth heads on weathered bases" loading="lazy" />
+        </figure>
+      </div>
+      <div class="feature__bottom">
+        <a href="#vault" class="note reveal">
+          <small>Numbered<br />edition<br />2026</small>
+          <img src="https://images.unsplash.com/photo-1697507695420-04623ccff2af?w=300&q=70&auto=format&fit=crop" alt="" loading="lazy" />
+        </a>
+        <h2 class="split split--right"><span class="ln"><span>From the Eastern Ghats</span></span><span class="ln"><span class="cut">to your hands.</span></span></h2>
+      </div>
+    </section>
+
+    <!-- ============ 4. THE VAULT: piece switcher ============ -->
+    <section class="vault card-sec card-sec--night" id="vault" data-vault>
+      <p class="giant giant--vault" aria-hidden="true">VAULT</p>
+      <div class="vault__head">
+        <h2 class="split"><span class="ln"><span>The 2011 Vault,</span></span><span class="ln"><span class="cut">numbered for you.</span></span></h2>
+        <p>21 pieces. Aged heartwood. Each numbered. The wood was sourced in 2011 and has waited since for the right hands.</p>
+      </div>
+      <div class="vault__body">
+        <figure class="vault__img">
+          <img data-vault-img src="https://images.unsplash.com/photo-1784570343031-649cce9a185c?w=1000&q=80&auto=format&fit=crop" alt="Red-brown sandalwood mala with silver accents" loading="lazy" />
+        </figure>
+        <div class="vault__info">
+          <small data-vault-name>Heartwood Mala</small>
+          <p class="vault__no">No. <span data-vault-no>03</span><small>/21</small></p>
+          <div class="duo">
+            <a href="#" class="pill pill--ghost" data-vault-cta>Reserve</a>
+            <a href="#" class="dot" aria-label="Reserve this piece"><i class="ph-light ph-arrow-up-right"></i></a>
+          </div>
+          <div class="thumbs" role="group" aria-label="Choose a piece" data-thumbs>
+            <button aria-pressed="true" data-i="0"><img src="https://images.unsplash.com/photo-1784570343031-649cce9a185c?w=200&q=70&auto=format&fit=crop" alt="Heartwood Mala" /></button>
+            <button aria-pressed="false" data-i="1"><img src="https://images.unsplash.com/photo-1767043088777-1884c2ef6c97?w=200&q=70&auto=format&fit=crop" alt="Carved Objects" /></button>
+            <button aria-pressed="false" data-i="2"><img src="https://images.unsplash.com/photo-1774301844178-c9ce96b76d92?w=200&q=70&auto=format&fit=crop" alt="Wide-Tooth Comb" /></button>
+            <button aria-pressed="false" data-i="3"><img src="https://images.unsplash.com/photo-1770816307472-945144576a1f?w=200&q=70&auto=format&fit=crop" alt="Keepsake Box" /></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. VOICES: carousel of workshop notes ============ -->
+    <section class="voices card-sec card-sec--paper" id="voices" data-voices>
+      <div class="voices__head">
+        <p>Notes from the workshop, on the material and the hands that read it.</p>
+        <h2 class="split"><span class="ln"><span>What the</span></span><span class="ln"><span>workshop</span> <span class="cut">knows.</span></span></h2>
+        <div class="voices__ctrl">
+          <button class="ring ring--line" data-v-prev aria-label="Previous note"><i class="ph-light ph-arrow-left"></i></button>
+          <button class="ring ring--gold" data-v-next aria-label="Next note"><i class="ph-light ph-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="voices__body">
+        <div class="voices__queue" data-v-queue></div>
+        <figure class="voices__img" data-v-img></figure>
+        <blockquote class="voices__quote">
+          <span class="voices__mark" aria-hidden="true">“</span>
+          <p data-v-text></p>
+          <footer data-v-by></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ 6. STEPS over the image ============ -->
+    <section class="steps card-sec" data-steps>
+      <img class="steps__bg" src="https://images.unsplash.com/photo-1752184791411-0a1735fc295a?w=2400&q=80&auto=format&fit=crop" alt="" loading="lazy" />
+      <div class="steps__shade"></div>
+      <div class="steps__copy">
+        <h2 class="split"><span class="ln"><span>Your piece, just</span></span><span class="ln"><span class="cut">a few steps away.</span></span></h2>
+        <p>Private viewing, documented provenance and careful delivery, from the workshop to your door.</p>
+      </div>
+      <ol class="steps__row" data-steps-row>
+        <li><span class="steps__icon"><i class="ph-light ph-magnifying-glass"></i></span><strong>Choose a piece</strong><small>Browse the collections or ask for a private viewing.</small></li>
+        <li><span class="steps__icon"><i class="ph-light ph-certificate"></i></span><strong>Receive its record</strong><small>Number, batch and provenance, before you commit.</small></li>
+        <li><span class="steps__icon"><i class="ph-light ph-lock-key"></i></span><strong>Secure payment</strong><small>Pay online, or by arrangement for private orders.</small></li>
+        <li><span class="steps__icon"><i class="ph-light ph-package"></i></span><strong>Delivered with care</strong><small>Wrapped by hand and sent with its documentation.</small></li>
+      </ol>
+    </section>
+
+    <!-- ============ 7. FOOTER ============ -->
+    <footer class="footer card-sec card-sec--paper">
+      <div class="footer__top">
+        <div>
+          <p class="brand brand--ink">santalum</p>
+          <p class="footer__tag">One material, read by hand.<br />Since 1980.</p>
+        </div>
+        <form class="news" onsubmit="event.preventDefault(); this.classList.add('is-done');">
+          <label for="news-email">Santalum Circle</label>
+          <div class="news__field">
+            <input id="news-email" type="email" required autocomplete="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </div>
+          <small class="news__done" role="status">Thank you. You are on the list.</small>
+        </form>
+      </div>
+      <div class="footer__mid">
+        <address>
+          Visits by appointment<br />
+          India
+          <a href="https://wa.me/" class="footer__wa"><i class="ph-fill ph-whatsapp-logo"></i> Private enquiries on WhatsApp</a>
+        </address>
+        <nav aria-label="Shop"><h4>Shop</h4><a href="#vault">The 2011 Vault</a><a href="#">Beads &amp; Malas</a><a href="#">Jewellery</a><a href="#">Gifting</a></nav>
+        <nav aria-label="Maison"><h4>Maison</h4><a href="#about">About</a><a href="#voices">Journal</a><a href="#">Provenance</a><a href="#">Corporate</a></nav>
+        <nav aria-label="Help"><h4>Help</h4><a href="#">Shipping</a><a href="#">Returns</a><a href="#">CITES Compliance</a><a href="#">Contact</a></nav>
+      </div>
+      <div class="footer__base">
+        <small>© 2026 Santalum Maison. All pieces individually numbered and registered.</small>
+        <nav aria-label="Legal"><a href="#">Terms</a><a href="#">Privacy</a></nav>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+          <a href="#" aria-label="Pinterest" class="is-gold"><i class="ph-fill ph-pinterest-logo"></i></a>
+          <a href="https://wa.me/" aria-label="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Menu -->
+  <div class="menu" data-menu aria-hidden="true">
+    <button class="ring ring--solid menu__close" data-menu-close aria-label="Close menu"><i class="ph-light ph-x"></i></button>
+    <nav aria-label="Menu">
+      <a href="#top">Home</a><a href="#vault">Shop</a><a href="#about">About</a><a href="#voices">Journal</a><a href="#top" data-theme-toggle>Switch theme</a>
+    </nav>
+  </div>
+
+  <!-- Bag -->
+  <div class="scrim" data-scrim></div>
+  <aside class="bag" data-bag aria-label="Shopping bag" aria-hidden="true">
+    <header><h2>Your bag</h2><button class="ring ring--line" data-bag-close aria-label="Close bag"><i class="ph-light ph-x"></i></button></header>
+    <div class="bag__empty">
+      <p>Your bag is empty.</p>
+      <small>Begin with the 2011 Vault, or explore the Maison.</small>
+      <div class="duo"><a href="#vault" class="pill pill--ink" data-bag-close>Explore the Maison</a><a href="#vault" class="dot" data-bag-close aria-label="Explore the Maison"><i class="ph-light ph-arrow-up-right"></i></a></div>
+    </div>
+  </aside>
+
+  <script src="main.js"></script>
+</body>
+</html>
