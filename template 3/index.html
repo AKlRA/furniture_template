@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santalum Maison</title>
+  <meta name="description" content="Santalum Maison. India's first sandalwood house, where the rarest botanical material on earth becomes jewellery, ritual and record." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,300..500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ============ 1. HERO ============ -->
+  <header class="hero" id="top">
+    <img class="hero__img" src="https://images.unsplash.com/photo-1781428013695-54645ddc563f?w=2400&q=80&auto=format&fit=crop" alt="A white staircase rising out of a field of red poppies under an open sky" fetchpriority="high" />
+    <div class="hero__shade"></div>
+
+    <div class="topbar">
+      <form class="search" role="search" onsubmit="event.preventDefault()">
+        <i class="ph-light ph-magnifying-glass" aria-hidden="true"></i>
+        <label for="q" class="sr-only">Search</label>
+        <input id="q" type="search" placeholder="Search" />
+      </form>
+      <a href="#top" class="wordmark">Santalum Maison</a>
+      <div class="topbar__icons">
+        <a href="#" aria-label="Account"><i class="ph-light ph-user"></i></a>
+        <a href="#" aria-label="Wishlist"><i class="ph-light ph-heart"></i></a>
+        <button data-bag-open aria-label="Open shopping bag"><i class="ph-light ph-bag-simple"></i><b data-bag-count>0</b></button>
+        <button class="burger" data-burger aria-label="Open menu" aria-expanded="false"><i class="ph-light ph-list"></i></button>
+      </div>
+    </div>
+
+    <nav class="navrow" aria-label="Primary">
+      <a href="#collections">Collections</a>
+      <a href="#bestsellers">2011 Vault</a>
+      <a href="#collections" data-tab-link="0">Beads &amp; Malas</a>
+      <a href="#collections" data-tab-link="1">Jewellery</a>
+      <a href="#collections" data-tab-link="2">Objects</a>
+      <a href="#collections" data-tab-link="3">Powder</a>
+      <a href="#collections" data-tab-link="4">Gifting</a>
+      <a href="#journal">Journal</a>
+      <a href="#circle">Corporate</a>
+    </nav>
+
+    <div class="hero__copy">
+      <h1>Four Thousand Years<br /> <em>Found Its Way to You</em></h1>
+      <p>India's first sandalwood house, where the rarest botanical material on earth becomes jewellery, ritual and record.</p>
+      <div class="hero__ctas">
+        <a href="#collections" class="btn btn--red">Explore the Collection</a>
+        <a href="#circle" class="btn btn--cream">Private Enquiry</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" data-menu aria-hidden="true">
+    <button class="menu__close" data-burger-close aria-label="Close menu"><i class="ph-light ph-x"></i></button>
+    <nav aria-label="Menu">
+      <a href="#collections">Collections</a>
+      <a href="#bestsellers">The 2011 Vault</a>
+      <a href="#philosophy">The Maison</a>
+      <a href="#film">The Craft</a>
+      <a href="#journal">Journal</a>
+      <a href="#circle">Private Enquiry</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ============ 2. CATEGORY TABS + SHOWCASE ============ -->
+    <section class="showcase" id="collections">
+      <div class="tabs" role="tablist" aria-label="Collections">
+        <button role="tab" aria-selected="true" data-tab="0">Beads &amp; Malas</button>
+        <button role="tab" aria-selected="false" data-tab="1">Jewellery</button>
+        <button role="tab" aria-selected="false" data-tab="2">Objects</button>
+        <button role="tab" aria-selected="false" data-tab="3">Powder</button>
+        <button role="tab" aria-selected="false" data-tab="4">Gifting</button>
+      </div>
+
+      <div class="stage" id="bestsellers">
+        <img class="stage__img" data-stage-img src="https://images.unsplash.com/photo-1784570343031-649cce9a185c?w=2200&q=80&auto=format&fit=crop" alt="A strand of red-brown prayer beads with silver accents" />
+        <div class="stage__shade"></div>
+        <p class="stage__kicker">Most requested</p>
+        <h2 class="stage__title" data-stage-title>Beads &amp; Malas</h2>
+        <a href="#" class="stage__link" data-stage-link>Shop Beads &amp; Malas <i class="ph-light ph-arrow-right"></i></a>
+
+        <ul class="products">
+          <li><a href="#"><img src="https://images.unsplash.com/photo-1774301844178-c9ce96b76d92?w=500&q=75&auto=format&fit=crop" alt="" loading="lazy" /><span>Wide-Tooth Comb</span></a></li>
+          <li><a href="#"><img src="https://images.unsplash.com/photo-1762328491699-0d46a97cbd2c?w=500&q=75&auto=format&fit=crop" alt="" loading="lazy" /><span>108-Bead Mala</span></a></li>
+          <li><a href="#"><img src="https://images.unsplash.com/photo-1549315393-aeac60e09d29?w=500&q=75&auto=format&fit=crop" alt="" loading="lazy" /><span>Keepsake Box</span></a></li>
+          <li><a href="#"><img src="https://images.unsplash.com/photo-1767043088777-1884c2ef6c97?w=500&q=75&auto=format&fit=crop" alt="" loading="lazy" /><span>Carved Objects</span></a></li>
+          <li><a href="#"><img src="https://images.unsplash.com/photo-1702001382966-e464275080ef?w=500&q=75&auto=format&fit=crop" alt="" loading="lazy" /><span>Heartwood Powder</span></a></li>
+          <li><a href="#"><img src="https://images.unsplash.com/photo-1636978669347-ebc543a814f3?w=500&q=75&auto=format&fit=crop" alt="" loading="lazy" /><span>Ritual Coil</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 3. PROMISES ============ -->
+    <section class="promises">
+      <div class="wrap">
+        <h2 class="reveal">Made to Be Kept</h2>
+        <p class="lede reveal" style="--d:80ms">Every piece is cut from documented heartwood, finished by hand and sent with its record.</p>
+        <div class="promises__grid">
+          <article class="promise reveal">
+            <span class="medal"><i class="ph-light ph-seal-check"></i></span>
+            <h3>Numbered &amp; Registered</h3>
+            <p>Each piece carries its own number.</p>
+          </article>
+          <article class="promise reveal" style="--d:80ms">
+            <span class="medal"><i class="ph-light ph-hand-palm"></i></span>
+            <h3>Carved by Hand</h3>
+            <p>The grain sets the form, not a template.</p>
+          </article>
+          <article class="promise reveal" style="--d:160ms">
+            <span class="medal"><i class="ph-light ph-tree"></i></span>
+            <h3>Documented Source</h3>
+            <p>Provenance records available on request.</p>
+          </article>
+          <article class="promise reveal" style="--d:240ms">
+            <span class="medal"><i class="ph-light ph-gift"></i></span>
+            <h3>Delivered With Care</h3>
+            <p>From our workshop to your hands.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. PHILOSOPHY ============ -->
+    <section class="philosophy" id="philosophy">
+      <div class="philosophy__red">
+        <h2 class="reveal">Our Philosophy</h2>
+        <figure class="reveal" style="--d:80ms">
+          <img src="https://images.unsplash.com/photo-1636054347648-61b463132e32?w=900&q=78&auto=format&fit=crop" alt="A branch of red berries in a glass bottle on a low wooden bench" loading="lazy" />
+        </figure>
+        <p class="reveal" style="--d:160ms">Every piece begins as a reading. The artisan studies the grain before the first cut. The wood decides what it will become. The hand follows.</p>
+      </div>
+      <div class="philosophy__cream">
+        <img class="float f1" src="https://images.unsplash.com/photo-1646645766793-25e5ffa020e9?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy" />
+        <img class="float f2" src="https://images.unsplash.com/photo-1607437817193-3b3b029b5b75?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy" />
+        <blockquote class="reveal">There is a wood that cannot be replaced. We work with nothing else.</blockquote>
+        <img class="float f3" src="https://images.unsplash.com/photo-1770816307472-945144576a1f?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy" />
+        <img class="float f4" src="https://images.unsplash.com/photo-1726331247490-6372b8025e90?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy" />
+        <img class="float f5" src="https://images.unsplash.com/photo-1646534607539-6355deaf495c?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ============ 5. FILM BANNER ============ -->
+    <section class="film" id="film">
+      <img src="https://images.unsplash.com/photo-1767043088777-1884c2ef6c97?w=2400&q=80&auto=format&fit=crop" alt="Red sandalwood carvings in close detail" loading="lazy" />
+      <div class="film__shade"></div>
+      <button class="film__play" aria-label="Play film"><span>Play Film</span><i class="ph-light ph-play"></i></button>
+      <div class="film__copy">
+        <h2 class="reveal">The 2011 Vault</h2>
+        <p class="reveal" style="--d:100ms">21 pieces. Aged heartwood. Each numbered. The wood was sourced in 2011. It has been waiting since then for the right hands and the right moment. Both have arrived.</p>
+      </div>
+    </section>
+
+    <!-- ============ 6. JOURNAL ============ -->
+    <section class="journal" id="journal">
+      <div class="wrap journal__grid">
+        <h2 class="reveal">From the Archive</h2>
+        <a href="#" class="entry reveal">
+          <time datetime="2026-06-14">14 June 2026, 6 minute read</time>
+          <h3>Why We Stopped at 21 Pieces</h3>
+        </a>
+        <a href="#" class="entry reveal" style="--d:80ms">
+          <time datetime="2026-06-02">2 June 2026, 5 minute read</time>
+          <h3>What a Master Carver Reads in the Grain</h3>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 7. SANTALUM CIRCLE ============ -->
+    <section class="circle" id="circle">
+      <div class="wrap">
+        <h2 class="reveal">Join the Santalum Circle</h2>
+        <p class="reveal" style="--d:80ms">New editions, journal entries and private viewings. A few letters a year, never more.</p>
+        <form class="circle__form reveal" style="--d:160ms" onsubmit="event.preventDefault(); this.classList.add('is-done');">
+          <label for="email" class="sr-only">Email address</label>
+          <input id="email" type="email" required autocomplete="email" placeholder="Your email" />
+          <button type="submit" aria-label="Join"><i class="ph-light ph-arrow-right"></i></button>
+          <small class="circle__done" role="status">Thank you. You are on the list.</small>
+        </form>
+        <a href="https://wa.me/" class="circle__alt"><i class="ph-light ph-whatsapp-logo"></i> Private enquiries on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__cols">
+      <nav aria-label="Shop">
+        <h4>Shop</h4>
+        <a href="#">Beads &amp; Malas</a><a href="#">Jewellery</a><a href="#">Everyday Objects</a><a href="#">Powder &amp; Material</a><a href="#">Gifting</a>
+      </nav>
+      <nav aria-label="Maison">
+        <h4>Maison</h4>
+        <a href="#">The Maison</a><a href="#">Material</a><a href="#">Provenance</a><a href="#">Craft</a><a href="#">Journal</a>
+      </nav>
+      <nav aria-label="Support">
+        <h4>Support</h4>
+        <a href="#">Contact</a><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Corporate &amp; Bespoke</a><a href="#">CITES Compliance</a>
+      </nav>
+    </div>
+    <div class="wrap footer__meta">
+      <p>All pieces individually numbered and registered. Provenance documentation available on request.</p>
+      <p>© 2026 Santalum Maison. Since 1980. <a href="#">Privacy</a> <a href="#">Terms</a></p>
+    </div>
+    <p class="footer__word" aria-hidden="true">Santalum</p>
+  </footer>
+
+  <!-- ============ BAG DRAWER ============ -->
+  <div class="scrim" data-scrim></div>
+  <aside class="bag" data-bag aria-label="Shopping bag" aria-hidden="true">
+    <header>
+      <h2>Your Bag</h2>
+      <button class="bag__close" data-bag-close aria-label="Close bag"><i class="ph-light ph-x"></i></button>
+    </header>
+    <div class="bag__empty">
+      <p>Your bag is empty.</p>
+      <small>Begin with the current edition, or browse the collections.</small>
+      <a href="#collections" class="btn btn--red" data-bag-close>Explore the Collection</a>
+    </div>
+  </aside>
+
+  <script src="main.js"></script>
+</body>
+</html>
