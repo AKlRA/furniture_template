@@ -14,9 +14,24 @@
 </head>
 <body>
 
+  <!-- ============ INTRO ============ -->
+  <div class="intro" data-intro aria-hidden="true">
+    <div class="intro__inner">
+      <svg class="intro__mark" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="28" /><circle cx="32" cy="32" r="19" /><circle cx="32" cy="32" r="10" /><circle cx="32" cy="32" r="2.6" class="dot" />
+      </svg>
+      <p class="intro__word"><span>S</span><span>a</span><span>n</span><span>t</span><span>a</span><span>l</span><span>u</span><span>m</span></p>
+      <p class="intro__sub">Maison, since 1980</p>
+      <span class="intro__bar"><i></i></span>
+    </div>
+  </div>
+
   <!-- ============ 1. HERO ============ -->
   <header class="hero" id="top">
-    <img class="hero__img" src="https://images.unsplash.com/photo-1781428013695-54645ddc563f?w=2400&q=80&auto=format&fit=crop" alt="A white staircase rising out of a field of red poppies under an open sky" fetchpriority="high" />
+    <picture>
+      <source media="(min-width: 768px)" srcset="assets/hero-chair-wide.jpg" />
+      <img class="hero__img" src="assets/hero-chair.jpg" alt="A white chair on the crest of a hill covered in red flowers, under an open sky" fetchpriority="high" />
+    </picture>
     <div class="hero__shade"></div>
 
     <div class="topbar">

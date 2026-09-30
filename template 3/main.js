@@ -2,6 +2,30 @@
   const root = document.documentElement;
   const body = document.body;
 
+  /* Intro: once per session, skipped for reduced motion */
+  const intro = document.querySelector('[data-intro]');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let seen = false;
+  try { seen = sessionStorage.getItem('sm3-intro') === '1'; } catch (e) {}
+  const ready = () => root.classList.add('is-ready');
+  if (seen || reduced) {
+    root.classList.add('no-intro');
+    requestAnimationFrame(ready);
+  } else {
+    body.classList.add('is-locked');
+    const heroImg = document.querySelector('.hero__img');
+    const minTime = new Promise((r) => setTimeout(r, 2200));
+    const imgLoaded = new Promise((r) => (heroImg.complete ? r() : heroImg.addEventListener('load', r, { once: true })));
+    const cap = new Promise((r) => setTimeout(r, 4500));
+    Promise.race([Promise.all([minTime, imgLoaded]), cap]).then(() => {
+      intro.classList.add('is-leaving');
+      body.classList.remove('is-locked');
+      setTimeout(ready, 350);
+      setTimeout(() => intro.remove(), 1400);
+      try { sessionStorage.setItem('sm3-intro', '1'); } catch (e) {}
+    });
+  }
+
   /* Entry reveals */
   const io = new IntersectionObserver(
     (entries) => entries.forEach((e) => {
